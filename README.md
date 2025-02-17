@@ -14,6 +14,7 @@ ECOBOT is an AI-driven chatbot designed to interact with users in a helpful, inf
 - **Typing Indicator**: Shows a "typing..." indicator for a better user experience.
 - **Multiple Buttons**: Includes Send, Clear History, and Chat History buttons.
 - **User-Friendly Interface**: Built using Gradio and PyWebView for a desktop app-like experience.
+- **- Multi-language support.
 
 ---
 
@@ -107,11 +108,9 @@ Open your browser and visit: **http://127.0.0.1:5000**
 ---
 
 ## 🚧 Future Enhancements
-
-- Multi-language support.
 - Improved UI/UX design.
 - Voice input and output capabilities.
-- Mobile integration.
+
 
 ---
 

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://Pranayy22.github.io/ECOBOT---AI-Chatbot/</loc>  <!-- Your GitHub Pages URL -->
-    <lastmod>2025-02-17</lastmod> <!-- Replace with the last modified date -->
-    <priority>1.00</priority>
-  </url>
+   <url>
+      <loc>https://github.com/Pranayy22/ECOBOT---AI-Chatbot/</loc>
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+   </url>
 </urlset>
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOBOT - AI Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="sidebar">
+        <button onclick="newChat()">➕ New Chat</button>
+        <button id="dark-mode-toggle">🌙 Dark Mode</button>
+        <button id="mic-toggle">🎙️ Mic</button>
+        <button onclick="openSettings()">⚙️ Settings</button><div id="settings-modal" class="modal" style="display: none;">
+    <h2>⚙️ Settings</h2>
+    <p>Customize chat preferences, language options, and emotion detection sensitivity.</p>
+    <button onclick="closeSettings()">Close</button>
+</div>
+
+
+
+
+
+        <h3>📜 Chat History</h3>
+        <div id="chat-history">
+            {% for chat_id in chat_history.keys() %}
+                <div class="chat-item">
+                    <button onclick="loadChat('{{ chat_id }}')">Chat {{ chat_id }}</button>
+                    <button class="delete-btn" onclick="deleteChat('{{ chat_id }}')">🗑️</button>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="chat-container">
+   <header>
+    <h1 class="ecobot-title">🤖ECOBOT</h1>
+   </header>
+
+        <div id="chat-box"></div>
+
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Message ECOBOT...">
+            <button onclick="sendMessage()">📩 Send</button>
+        </div>
+    </div>
+
+
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+

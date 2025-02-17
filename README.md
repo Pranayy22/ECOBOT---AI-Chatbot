@@ -136,5 +136,8 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 - **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/YourProfile) *(Update this link)*
 
 ---
+# ECOBOT - AI Chatbot  
+ECOBOT is an intelligent AI Chatbot powered by GPT-4, built with Python and Gradio. It provides smart and engaging conversations with users.
+
 
 This **README.md** covers everything needed for your ECOBOT project, including installation, setup, usage, and contribution guidelines. If you need any more sections or modifications, let me know! 🚀😃

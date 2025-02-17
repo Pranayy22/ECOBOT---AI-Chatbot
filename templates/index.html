@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ECOBOT - AI Chatbot</title>
-    <meta name="google-site-verification" content="6P2nUH4A_60NmP53GEbHzN3fmz79z_lg7V4OFiA53xg" />
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
@@ -12,6 +11,10 @@
         <button onclick="newChat()">➕ New Chat</button>
         <button id="dark-mode-toggle">🌙 Dark Mode</button>
         <button id="mic-toggle">🎙️ Mic</button>
+    
+
+
+
         <h3>📜 Chat History</h3>
         <div id="chat-history">
             {% for chat_id in chat_history.keys() %}
@@ -24,23 +27,37 @@
     </div>
 
     <div class="chat-container">
-        <header>
-            <h1 class="ecobot-title">🤖ECOBOT</h1>
-        </header>
+   <header>
+    <h1 class="ecobot-title">🤖ECOBOT</h1>
+   </header>
+
         <div id="chat-box"></div>
+
         <div class="input-container">
             <input type="text" id="user-input" placeholder="Message ECOBOT...">
             <button onclick="sendMessage()">📩 Send</button>
         </div>
     </div>
 
-    <meta name="description" content="ECOBOT is an AI-driven chatbot using GPT-4 technology, built with Flask. It's designed for real-time interactions and stores chat history.">
-    <meta name="keywords" content="AI chatbot, GPT-4, Flask, ECOBOT, chatbot development, chatbot project">
-    <meta name="author" content="Pranayy22">
-</body>
-</html>
 
+<meta name="description" content="ECOBOT is an AI-driven chatbot using GPT-4 technology, built with Flask. It's designed for real-time interactions and stores chat history.">
+<meta name="keywords" content="AI chatbot, GPT-4, Flask, ECOBOT, chatbot development, chatbot project">
+<meta name="author" content="Pranayy22">
+    
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Other meta tags, title, etc. -->
+</head>
+/* Add this in your style.css or inside the <style> tag in HTML */
+@media only screen and (max-width: 600px) {
+    /* Styles for mobile */
+    body {
+        font-size: 14px;  /* Example: Adjust font size for mobile */
+    }
 
+    .container {
+        padding: 10px;  /* Example: Adjust padding for mobile */
+    }
 
-
-
+    /* You can adjust other styles like header, footer, buttons, etc. for mobile */
+}

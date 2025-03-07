@@ -1,0 +1,7 @@
+# Ignore unnecessary files
+__pycache__/
+*.log
+*.sqlite3
+.env
+.vscode/
+.idea/
